@@ -16,7 +16,7 @@ spring:
           filters:
             #转发请求时去掉1级前缀
             - StripPrefix=1
-        - id: api-b
+        - id: api-bb
           uri: http://localhost:8091
           predicates:
             - Path=/client/**
