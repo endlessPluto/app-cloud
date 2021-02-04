@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="app-cloud-consumer" />
+        <module name="app-cloud-common" />
+        <module name="app-cloud-eureka" />
+        <module name="app-cloud-gateway" />
+        <module name="app-cloud-core" />
+        <module name="app-cloud-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="core" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="app-cloud-client" options="-parameters" />
+      <module name="app-cloud-common" options="-parameters" />
+      <module name="app-cloud-consumer" options="-parameters" />
+      <module name="app-cloud-core" options="-parameters" />
+      <module name="app-cloud-eureka" options="-parameters" />
+      <module name="app-cloud-gateway" options="-parameters" />
+      <module name="core" options="-parameters" />
+    </option>
+  </component>
+</project>
